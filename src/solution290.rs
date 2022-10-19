@@ -1,8 +1,7 @@
-use std::collections::HashMap;
-
 pub struct Solution;
 
 impl Solution {
+    #[allow(dead_code)]
     pub fn word_pattern(pattern: String, s: String) -> bool {
         use std::collections::HashMap;
         let mut current_hashmap: HashMap<&str, char> = HashMap::new();

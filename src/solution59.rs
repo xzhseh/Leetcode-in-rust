@@ -1,6 +1,7 @@
 pub struct Solution;
 
 impl Solution {
+    #[allow(dead_code)]
     pub fn generate_matrix(n: i32) -> Vec<Vec<i32>> {
         let mut state = 0;
         let mut current_num = 1;

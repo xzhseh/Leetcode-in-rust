@@ -1,6 +1,7 @@
 pub struct Solution;
 
 impl Solution {
+    #[allow(dead_code)]
     pub fn search_matrix(matrix: Vec<Vec<i32>>, target: i32) -> bool {
         let mut i = 0;
         let mut j = matrix[0].len() - 1;

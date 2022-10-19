@@ -1,6 +1,7 @@
 pub struct Solution;
 
 impl Solution {
+    #[allow(dead_code)]
     pub fn longest_palindrome(s: String) -> i32 {
         use std::collections::HashMap;
         let mut current_hashmap: HashMap<char, i32> = HashMap::new();
@@ -11,7 +12,7 @@ impl Solution {
             current_hashmap.entry(c).and_modify(|x| *x += 1).or_insert(1);
         }
 
-        for (key, val) in current_hashmap {
+        for (_key, val) in current_hashmap {
             if val % 2 != 0 {
                 flag = true;
             }

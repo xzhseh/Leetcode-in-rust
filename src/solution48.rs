@@ -1,6 +1,7 @@
 pub struct Solution;
 
 impl Solution {
+    #[allow(dead_code)]
     pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
         let mut tmp_matrix = matrix.clone();
         let col = matrix[0].len() - 1;

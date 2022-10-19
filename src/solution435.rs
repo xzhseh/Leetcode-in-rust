@@ -1,6 +1,7 @@
 pub struct Solution;
 
 impl Solution {
+    #[allow(dead_code)]
     pub fn erase_overlap_intervals(intervals: Vec<Vec<i32>>) -> i32 {
         let mut intervals = intervals.clone();
         let total_intervals = intervals.len();
