@@ -17,7 +17,7 @@ impl Solution {
                 if c != current_hashmap[&input_vec[count]] || input_vec[count] != second_hashmap[&c] {
                     return false;
                 } else {
-                    count += 1
+                    count += 1;
                 }
             } else if current_hashmap.contains_key(&input_vec[count]) || second_hashmap.contains_key(&c) {
                 return false;
