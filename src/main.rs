@@ -8,6 +8,8 @@ mod solution290;
 mod solution409;
 mod solution415;
 mod solution763;
+mod solution560;
+mod solution334;
 
 fn main() {
     
