@@ -7,6 +7,7 @@ mod solution435;
 mod solution290;
 mod solution409;
 mod solution415;
+mod solution763;
 
 fn main() {
     
