@@ -21,6 +21,7 @@ mod solution435;
 mod solution560;
 mod solution724;
 mod solution763;
+mod solution876;
 mod solution1480;
 
 fn main() {
