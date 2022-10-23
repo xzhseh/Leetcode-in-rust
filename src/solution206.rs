@@ -8,6 +8,7 @@ pub struct ListNode {
 }
 
 impl Solution {
+    // The basic version of iteration
     #[allow(dead_code)]
     pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         // Use a very clean syntax to solve this problem, which is 'while let'
@@ -22,6 +23,7 @@ impl Solution {
         pre
     }
 
+    // Another solution of recursion
     #[allow(dead_code)]
     pub fn reverse_list_recursion_version(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         fn reverse(
