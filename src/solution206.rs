@@ -18,8 +18,26 @@ impl Solution {
             node.next = pre;
             pre = Some(node);
         }
-        
+
         pre
+    }
+
+    #[allow(dead_code)]
+    pub fn reverse_list_recursion_version(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        fn reverse(
+            head: Option<Box<ListNode>>,
+            prev: Option<Box<ListNode>>,
+        ) -> Option<Box<ListNode>> {
+            if let Some(mut node) = head {
+                let tail = node.next.take();
+                node.next = prev;
+
+                return reverse(tail, Some(node));
+            }
+            prev
+        }
+
+        reverse(head, None)
     }
 }
 
