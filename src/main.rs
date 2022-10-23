@@ -1,4 +1,5 @@
 mod solution;
+mod solution2;
 mod solution5;
 mod solution59;
 mod solution48;
