@@ -6,6 +6,7 @@ mod solution43;
 mod solution48;
 mod solution49;
 mod solution59;
+mod solution70;
 mod solution119;
 mod solution121;
 mod solution187;
