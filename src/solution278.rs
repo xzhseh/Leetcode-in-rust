@@ -20,4 +20,14 @@ impl Solution {
 
         left
     }
+
+    #[allow(dead_code)]
+    #[allow(non_snake_case)]
+    pub fn isBadVersion(&self, version: i32) -> bool {
+        if version % 2 == 0 {
+            true
+        } else {
+            false
+        }
+    }
 }
