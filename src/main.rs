@@ -23,14 +23,12 @@ mod solution435;
 mod solution509;
 mod solution560;
 mod solution724;
+mod solution733;
 mod solution763;
 mod solution876;
 mod solution1480;
 
 fn main() {
-    println!("hello world");
-    let tmp_string = "123".to_string();
-    let tmp_string_two = "456".to_string();
-    let _result = solution43::Solution::multiply(tmp_string, tmp_string_two);
-    println!("Final result: {}", _result);
+    let current_vec: Vec<Vec<i32>> = vec![vec![1, 1, 1], vec![1, 1, 0], vec![1, 0, 1]];
+    solution733::Solution::flood_fill(current_vec.clone(), 1, 1, 2);
 }
