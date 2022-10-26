@@ -22,7 +22,7 @@ class Solution {
     private boolean helper_func(TreeNode root, double lower, double higher) {
         if (root == null) {
             return true;
-        } else if (root.val <= lower || root.val >= higher) {a
+        } else if (root.val <= lower || root.val >= higher) {
             return false;
         } 
         return helper_func(root.left, lower, root.val) && helper_func(root.right, root.val, higher);
