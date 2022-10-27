@@ -65,13 +65,14 @@ class MyLinkedList {
         } else if (index > size) {
             return;
         } else {
-            Node tmpNode = firstNode;
+            Node tmpNode = firstNode.next;
             for (int i = 0; i < index - 1; ++i) {
                 tmpNode = tmpNode.next;
             }
             Node newNode = new Node(val, tmpNode.next, tmpNode);
             tmpNode.next = newNode;
             newNode.next.prev = newNode;
+            size += 1;
         }
     }
     
@@ -80,11 +81,12 @@ class MyLinkedList {
             return;
         } else {
             Node tmpNode = firstNode;
-            for (int i = 0; i < index - 1; ++i) {
+            for (int i = 0; i < index; ++i) {
                 tmpNode = tmpNode.next;
             }
             tmpNode.next = tmpNode.next.next;
             tmpNode.next.prev = tmpNode;
+            size -= 1;
         }
     }
 }
