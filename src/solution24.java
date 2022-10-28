@@ -19,12 +19,25 @@ class Solution {
             return return_node;
         }
 
+        int count = 0;
+        ListNode count_node = head;
+        while (count_node != null) {
+            count += 1;
+            count_node = count_node.next;
+        }
+
         ListNode ptr_one = head;
         ListNode ptr_two = head;
         ListNode return_node = head.next;
 
-        while (ptr_one.next.next != null) { // Find the second last not changed node
-            ptr_one = ptr_one.next;
+        if (count % 2 == 0) {
+            while (ptr_one.next.next != null) { // Find the second last not changed node
+                ptr_one = ptr_one.next;
+            }
+        } else {
+            while (ptr_one.next.next.next != null) { // Find the second last not changed node
+                ptr_one = ptr_one.next;
+            }
         }
 
         while (true) {
