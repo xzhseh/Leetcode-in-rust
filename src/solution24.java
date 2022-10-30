@@ -73,4 +73,14 @@ class Solution {
 
         return return_node;
     }
+
+    public ListNode swapPairs_recursion_version(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode newHead = head.next;
+        head.next = swapPairs(newHead.next);
+        newHead.next = head;
+        return newHead;
+    }
 }
