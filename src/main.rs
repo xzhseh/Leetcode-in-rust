@@ -10,6 +10,7 @@ mod solution59;
 mod solution70;
 mod solution119;
 mod solution121;
+mod solution155;
 mod solution187;
 mod solution205;
 mod solution206;
