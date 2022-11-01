@@ -3,6 +3,7 @@ use std::vec;
 pub struct Solution;
 
 impl Solution {
+    /* time: 100.00% space: 35.29% */
     #[allow(dead_code)]
     pub fn get_row(row_index: i32) -> Vec<i32> {
         let mut return_vec: Vec<i32> = vec![1; (row_index + 1) as usize];
