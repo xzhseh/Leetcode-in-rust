@@ -15,6 +15,7 @@
  */
  
 class Solution {
+    /* time: 100.00% space: 80.43% */
     public List<List<Integer>> levelOrder(TreeNode root) {
         if (root == null) { return new ArrayList<List<Integer>>(); }
         Deque<TreeNode> deque_for_tree = new LinkedList<TreeNode>();
