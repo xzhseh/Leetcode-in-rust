@@ -1,6 +1,7 @@
 pub struct Solution;
 
 impl Solution {
+    #[allow(dead_code)]
     pub fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {
         if trust.len() == 0 {
             if n == 1 {
