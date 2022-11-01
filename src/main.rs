@@ -34,6 +34,7 @@ mod solution876;
 mod solution997;
 mod solution1249;
 mod solution1480;
+mod solution1832;
 
 fn main() {
     let current_vec: Vec<Vec<i32>> = vec![vec![1, 1, 1], vec![1, 1, 0], vec![1, 0, 1]];
