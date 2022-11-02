@@ -34,6 +34,7 @@ mod solution876;
 mod solution997;
 mod solution1249;
 mod solution1480;
+mod solution1557;
 mod solution1832;
 
 fn main() {
