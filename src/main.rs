@@ -30,6 +30,7 @@ mod solution415;
 mod solution435;
 mod solution509;
 mod solution560;
+mod solution566;
 mod solution704;
 mod solution724;
 mod solution733;
