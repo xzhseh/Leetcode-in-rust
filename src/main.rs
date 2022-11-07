@@ -3,6 +3,7 @@ mod solution1;
 mod solution2;
 mod solution5;
 mod solution21;
+mod solution36;
 mod solution43;
 mod solution48;
 mod solution49;
