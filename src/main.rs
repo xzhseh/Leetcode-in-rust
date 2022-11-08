@@ -23,6 +23,7 @@ mod solution215;
 mod solution217;
 mod solution238;
 mod solution240;
+mod solution242;
 mod solution278;
 mod solution290;
 mod solution334;
