@@ -10,6 +10,7 @@
  * }
  */
 public class Solution {
+    /* time: 100.00% space: 30.10% */ 
     public boolean hasCycle(ListNode head) {
         if (head == null || head.next == null) {
             return false;
