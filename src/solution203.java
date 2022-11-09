@@ -9,6 +9,7 @@
  * }
  */
 class Solution {
+    /* time: 53.27% space: 22.34% */
     public ListNode removeElements(ListNode head, int val) {
         if (head == null) {
             return null;
