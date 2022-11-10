@@ -9,6 +9,7 @@
  * }
  */
 class Solution {
+    /* time: 100.00% space: 14.97% */
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null || head.next == null) {
             return head;
