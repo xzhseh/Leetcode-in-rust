@@ -18,6 +18,7 @@ struct MyQueue {
  */
 impl MyQueue {
 
+    #[allow(dead_code)]
     fn new() -> Self {
         MyQueue {
             stack_one: Vec::new(),
@@ -25,10 +26,12 @@ impl MyQueue {
         }
     }
     
+    #[allow(dead_code)]
     fn push(&mut self, x: i32) {
         self.stack_one.push(x);
     }
     
+    #[allow(dead_code)]
     fn pop(&mut self) -> i32 {
         if self.stack_two.len() != 0 {
             return self.stack_two.pop().unwrap();
@@ -40,6 +43,7 @@ impl MyQueue {
         }
     }
     
+    #[allow(dead_code)]
     fn peek(&self) -> i32 {
         if self.stack_two.len() != 0 {
             self.stack_two[self.stack_two.len() - 1]
@@ -48,6 +52,7 @@ impl MyQueue {
         }
     }
     
+    #[allow(dead_code)]
     fn empty(&self) -> bool {
         self.stack_one.len() == 0 && self.stack_two.len() == 0
     }
