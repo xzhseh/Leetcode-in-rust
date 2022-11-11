@@ -2,6 +2,7 @@ mod solution;
 mod solution1;
 mod solution2;
 mod solution5;
+mod solution20;
 mod solution21;
 mod solution36;
 mod solution43;
