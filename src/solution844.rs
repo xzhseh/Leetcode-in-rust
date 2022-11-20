@@ -1,11 +1,12 @@
 pub struct Solution;
 
+/* time: 100.00% space: 64.71% */
 impl Solution {
     #[allow(dead_code)]
     pub fn backspace_compare(s: String, t: String) -> bool {
         let string_builder = |s: String| -> String {
             let mut return_string = String::new();
-            
+
             for c in s.chars() {
                 if c != '#' {
                     return_string.push(c);
