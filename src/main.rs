@@ -46,6 +46,7 @@ mod solution733;
 mod solution746;
 mod solution763;
 mod solution841;
+mod solution844;
 mod solution876;
 mod solution997;
 mod solution1249;
