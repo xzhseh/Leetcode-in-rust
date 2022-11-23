@@ -17,7 +17,7 @@ struct MyQueue {
  * If you need a mutable reference, change it to `&mut self` instead.
  */
 impl MyQueue {
-
+    /* time: 100.00% space: 40.91% */
     #[allow(dead_code)]
     fn new() -> Self {
         MyQueue {

@@ -1,4 +1,3 @@
-mod solution;
 mod solution1;
 mod solution2;
 mod solution5;
