@@ -1,5 +1,6 @@
 pub struct Solution;
 
+/* time: 100.00% space: 34.78% */
 impl Solution {
     #[allow(dead_code)]
     pub fn search_matrix(matrix: Vec<Vec<i32>>, target: i32) -> bool {
