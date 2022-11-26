@@ -1,5 +1,6 @@
 pub struct Solution;
 
+/* time: 100.00% space: 76.00% */
 impl Solution {
     #[allow(dead_code)]
     pub fn is_happy(n: i32) -> bool {
