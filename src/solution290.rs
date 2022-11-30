@@ -1,5 +1,6 @@
 pub struct Solution;
 
+/* time: 100.00% space: 70.00% */
 impl Solution {
     #[allow(dead_code)]
     pub fn word_pattern(pattern: String, s: String) -> bool {
