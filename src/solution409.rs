@@ -1,5 +1,6 @@
 pub struct Solution;
 
+/* time: 100.00% space: 28.00% */
 impl Solution {
     #[allow(dead_code)]
     pub fn longest_palindrome(s: String) -> i32 {
