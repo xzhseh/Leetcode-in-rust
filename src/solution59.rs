@@ -1,5 +1,6 @@
 pub struct Solution;
 
+/* time: 100.00% space: 62.07% */
 impl Solution {
     #[allow(dead_code)]
     pub fn generate_matrix(n: i32) -> Vec<Vec<i32>> {
