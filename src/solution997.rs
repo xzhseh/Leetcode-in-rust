@@ -1,5 +1,6 @@
 pub struct Solution;
 
+/* time: 100.00% space: 100.00% */
 impl Solution {
     #[allow(dead_code)]
     pub fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {
