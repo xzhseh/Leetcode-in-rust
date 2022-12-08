@@ -14,6 +14,7 @@
  * }
  */
 
+/* time: 100.00% space: 24.31% */
 class Solution {
     public boolean isValidBST(TreeNode root) {
         return helper_func(root, -2e31, 2e31 - 1);
