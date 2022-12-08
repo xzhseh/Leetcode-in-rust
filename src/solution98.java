@@ -26,6 +26,7 @@ class Solution {
         } else if (root.val <= lower || root.val >= higher) {
             return false;
         } 
+        
         return helper_func(root.left, lower, root.val) && helper_func(root.right, root.val, higher);
     }
 }
