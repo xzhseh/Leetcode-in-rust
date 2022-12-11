@@ -2,7 +2,22 @@ pub struct Solution;
 
 impl Solution {
     #[allow(dead_code)]
-    pub fn character_replacement(_s: String, _k: i32) -> i32 {
-        1
+    pub fn character_replacement(s: String, k: i32) -> i32 {
+        let mut cur_vec: Vec<i32> = vec![0; 26]; // Use as the frequency calculator for every letter appear in the string
+        let mut max_frequency: i32 = 0;
+        let mut right: i32 = 0;
+        let mut left: i32 = 0;
+
+        while right < s.len() as i32 {
+            cur_vec[s.chars().nth(right as usize).unwrap() as usize - 'A' as usize] += 1;
+            max_frequency = std::cmp::max(max_frequency, cur_vec[s.chars().nth(right as usize).unwrap() as usize - 'A' as usize]);
+            if right - left + 1 - max_frequency > k {
+                cur_vec[s.chars().nth(left as usize).unwrap() as usize - 'A' as usize] -= 1;
+                left += 1;
+            }
+            right += 1;
+        }
+
+        right - left
     }
 }
