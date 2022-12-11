@@ -7,12 +7,13 @@ impl Solution {
         let mut max_frequency: i32 = 0;
         let mut right: i32 = 0;
         let mut left: i32 = 0;
+        let s_bytes = s.as_bytes();
 
         while right < s.len() as i32 {
-            cur_vec[s.chars().nth(right as usize).unwrap() as usize - 'A' as usize] += 1;
-            max_frequency = std::cmp::max(max_frequency, cur_vec[s.chars().nth(right as usize).unwrap() as usize - 'A' as usize]);
+            cur_vec[s_bytes[right as usize] as usize - 'A' as usize] += 1;
+            max_frequency = std::cmp::max(max_frequency, cur_vec[s_bytes[right as usize] as usize - 'A' as usize]);
             if right - left + 1 - max_frequency > k {
-                cur_vec[s.chars().nth(left as usize).unwrap() as usize - 'A' as usize] -= 1;
+                cur_vec[s_bytes[left as usize] as usize - 'A' as usize] -= 1;
                 left += 1;
             }
             right += 1;
