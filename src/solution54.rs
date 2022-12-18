@@ -1,5 +1,6 @@
 pub struct Solution;
 
+/* time: 100.00% space: 30.00% */
 impl Solution {
     #[allow(dead_code)]
     pub fn spiral_order(matrix: Vec<Vec<i32>>) -> Vec<i32> {
