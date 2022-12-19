@@ -1,3 +1,4 @@
+/* time: 67.96% space: 68.13 */
 class Solution {
     public int[] findBall(int[][] grid) {
         int num_of_balls = grid[0].length;
