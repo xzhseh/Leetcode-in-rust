@@ -1,3 +1,4 @@
+
 class Solution {
     int[] record_list = new int[40];
     // The recursion way of the solution
