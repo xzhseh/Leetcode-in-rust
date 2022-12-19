@@ -1,4 +1,4 @@
-
+/* time: 100.00% space: 68.13% */
 class Solution {
     int[] record_list = new int[40];
     // The recursion way of the solution
