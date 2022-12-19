@@ -52,6 +52,7 @@ mod solution841;
 mod solution844;
 mod solution876;
 mod solution997;
+mod solution1025;
 mod solution1249;
 mod solution1480;
 mod solution1557;
