@@ -18,6 +18,8 @@ class Solution {
     }
 
     // Also available of Dynamic Programming
+    // But unfortunately cost a lot 
+    // time: 6.68% space: 5.20%
     private int dp(int n) {
         ArrayList<Integer> dp = new ArrayList<Integer>();
         // Make sure dp[1] = 1
