@@ -69,6 +69,7 @@ class Solution {
         return total_min_time;
     }
 
+    /* The solution provided by chatGPT with good time and space complexity */
     private int leastInterval(char[] tasks, int n) {
         // Create an array to count the frequency of each task
         int[] taskCounts = new int[26];
