@@ -1,4 +1,5 @@
 class Solution {
+    /* time: 23.39% space: 76.67% */ 
     public int leastInterval(char[] tasks, int n) {
         int[] fre_list = new int[30];
         int[] cd_list = new int[30];
