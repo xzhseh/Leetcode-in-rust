@@ -68,4 +68,27 @@ class Solution {
 
         return total_min_time;
     }
+
+    private int leastInterval(char[] tasks, int n) {
+        // Create an array to count the frequency of each task
+        int[] taskCounts = new int[26];
+        for (char c : tasks) {
+            taskCounts[c - 'A']++;
+        }
+
+        // Sort the array in descending order by frequency
+        Arrays.sort(taskCounts);
+        int maxCount = taskCounts[25];
+
+        // Calculate the minimum number of units of time required to complete all the tasks
+        int unitsOfTime = (maxCount - 1) * (n + 1);
+        for (int i = 25; i >= 0; i--) {
+            if (taskCounts[i] == maxCount) {
+                unitsOfTime++;
+            }
+        }
+
+        // Return the minimum number of units of time required to complete all the tasks
+        return Math.max(unitsOfTime, tasks.length);
+    }
 }
